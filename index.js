@@ -28,7 +28,7 @@ function viewCart() {
   }
   else {
     var message="In your cart, you have "
-    for(var i = 0; i < cart.length; i++) {
+    for(let i = 0; i < cart.length; i++) {
       if(i === cart.length-1){
         message+=`and ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }
@@ -42,6 +42,11 @@ return message
 
 function total() {
   // write your code here
+  let total =0;
+  for(let i = 1; i < cart.length; i++){
+    total += cart[i].itemPrice
+  }
+  return total
 }
 
 function removeFromCart(item) {
