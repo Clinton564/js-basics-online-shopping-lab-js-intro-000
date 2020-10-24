@@ -26,6 +26,17 @@ function viewCart() {
   else if(cart.length === 2){
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
   }
+  else {
+    message="In your cart, you have "
+    for(i = 0; i < cart.length-1; i++) {
+      if(i === cart.length){
+        message.=`and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+      }
+      else {
+        message.=`${cart[i].itemName} at $${cart[i].itemPrice}, `
+      }
+    }
+  }
 }
 
 function total() {
