@@ -30,10 +30,10 @@ function viewCart() {
     message="In your cart, you have "
     for(i = 0; i < cart.length-1; i++) {
       if(i === cart.length){
-        message.=`and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+        message+=`and ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }
       else {
-        message.=`${cart[i].itemName} at $${cart[i].itemPrice}, `
+        message+=`${cart[i].itemName} at $${cart[i].itemPrice}, `
       }
     }
   }
