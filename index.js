@@ -24,7 +24,7 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }
   else if(cart.length === 2){
-    return `IN your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[0].itemName} at $${cart[0].itemPrice}.`
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }
 }
 
