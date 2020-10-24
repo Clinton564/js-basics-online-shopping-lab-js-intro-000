@@ -51,12 +51,12 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  for(let i = 0; i < cart.length; i++){
+  /* for(let i = 0; i < cart.length; i++){
     return console.log(`${cart[i].itemName} == ${item}`)
     if(cart[i].itemName==item) {
       cart.splice(1, 1)
     }
-  }
+  }*/
   cart.splice(0)
 }
 
