@@ -37,6 +37,7 @@ function viewCart() {
       }
     }
   }
+return message
 }
 
 function total() {
